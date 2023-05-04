@@ -1,0 +1,231 @@
+.admin-dashboard {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  min-height: calc(100vh - 130px);
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+  flex: 2;
+  border-right: 1px solid var(--dark-blue-color);
+  padding: 20px;
+}
+
+.admin-sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--pumpkin-color) !important;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.admin-sidebar-title i {
+  margin-right: 5px;
+  color: var(--dark-blue-color);
+}
+.person {
+  color: rgb(13, 168, 36);
+}
+.postIcon {
+  color: rgb(211, 84, 209);
+}
+.catIcon {
+  color: rgb(233, 204, 15);
+}
+.commentIcon {
+  color: rgb(15, 200, 233);
+}
+.admin-sidebar-list {
+  padding: 5px;
+  color: var(--dark-blue-color);
+}
+
+.admin-sidebar-link {
+  color: var(--dark-blue-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.admin-sidebar-link i {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+/* Admin Main */
+.admin-main {
+  flex: 10;
+  padding: 10px;
+}
+
+.admin-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--pumpkin-color);
+}
+
+.admin-main-card {
+  border: 1px solid var(--dark-blue-color);
+  width: 22%;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.cardTitle {
+  display: flex;
+}
+.admin-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-shadow: 1px 1px 1px #eed4bf;
+  color: var(--dark-blue-color);
+}
+.cardBottom {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.admin-card-count {
+  color: var(--red-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.admin-card-link-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  justify-content: space-between;
+}
+
+.admin-card-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+
+  display: flex;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.admin-card-link {
+  font-size: 15px;
+  background-color: var(--dark-blue-color);
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--white-color) !important;
+}
+.admin-card-link:visited {
+  background-color: inherit;
+}
+/* Add Category Form */
+.add-category,
+.add-admin {
+  margin: 25px !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 365px !important;
+  border: 1px solid var(--dark-blue-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.add-category-title,
+.add-admin-title {
+  text-shadow: 1px 1px 1px #eed4bf;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-blue-color);
+  margin-bottom: 15px;
+}
+
+.add-category-form-group,
+.add-admin-form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-category-form-group label,
+.add-admin-form-group label {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pumpkin-color);
+}
+
+.add-category-form-group input,
+.add-admin-form-group input {
+  padding: 10px;
+  border: 1px solid var(--dark-blue-color);
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.add-category-btn,
+.add-admin-btn {
+  cursor: pointer;
+  border: none;
+  background-color: var(--dark-blue-color);
+  width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white-color);
+}
+.mainBottom {
+  display: flex;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+  .admin-main-card {
+    width: 44%;
+  }
+  .add-category {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .admin-sidebar {
+    display: none;
+  }
+
+  .add-category {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .admin-dashboard {
+    display: block;
+  }
+  .admin-main-card {
+    width: 70%;
+  }
+  .add-category {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

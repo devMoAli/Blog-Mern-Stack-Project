@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+
+.create-post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 21px;
+}
+
+.create-post-title {
+  font-size: 30px;
+  color: #1782c5c9;
+  text-shadow: 1px 1px 1px #ddad83;
+  font-family: cursive;
+  filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.4));
+  margin-bottom: 10px;
+}
+.cam {
+  width: 100px;
+  position: relative;
+  left: 150px;
+  top: 50px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.create-post-form {
+  width: 700px;
+  display: flex;
+  font-family: "Cardo", serif;
+  flex-direction: column;
+}
+.options {
+  font-weight: bolder;
+  text-align: left;
+  width: 50%;
+  cursor: pointer;
+  font-family: "Cardo", serif;
+  border-radius: 8px;
+  border: 1px solid var(--gray-color);
+  font-size: 16px;
+  padding: 15px;
+  margin: 5px 0;
+  color: rgb(14, 75, 104);
+  filter: drop-shadow(3px 3px 2px rgba(184, 121, 71, 0.4));
+}
+.options option {
+  font-family: "Cardo", serif;
+}
+.create-post-input,
+.create-post-textarea,
+.create-post-upload {
+  width: 100%;
+  font-family: "Cardo", serif;
+  border-radius: 8px;
+  border: 1px solid var(--gray-color);
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.create-post-input:focus,
+.create-post-textarea:focus {
+  border: 1px solid rgb(0, 204, 255) !important;
+}
+.create-post-textarea {
+  resize: none;
+}
+
+.create-post-upload {
+  cursor: pointer;
+  font-family: "Cardo", serif;
+  filter: drop-shadow(3px 3px 2px rgba(184, 121, 71, 0.4));
+  background-color: #e3f6fda2;
+}
+
+.create-post-btn {
+  width: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  background-color: #297db1aa;
+  border: none;
+  font-size: 25px;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 38px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 2px #ddad83;
+  letter-spacing: 0.1rem;
+  filter: drop-shadow(3px 3px 2px rgba(184, 121, 71, 0.4));
+}
+.create-post-btn:hover {
+  text-shadow: 1px 1px 2px #ddad83;
+  background-color: #4eabe5aa;
+}
+/* Media Queries */
+@media (max-width: 820px) {
+  .create-post-form {
+    width: 100%;
+  }
+}
