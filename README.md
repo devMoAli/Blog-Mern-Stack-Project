@@ -12,17 +12,17 @@
 - User can update his account profile name, photo and bio
 - Admin Dashboard with Validation for Admins only to control all users posts, comments and categories
 - Backend APIs are secured with hpp and helmet with strong complex password and secured from XSS Attacks and Rate Limit
-- You should configure your backend .env file with your own credentials
-PORT
-NODE_ENV
-MONGO_URI 
-MONGO_CLOUD_URI
-JWT_SECRET
-CLOUDINARY_CLOUD_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-APP_EMAIL_ADDRESS
-APP_EMAIL_PASSWORD
+- You should configure your backend .env file with your own credentials - 
+PORT -
+NODE_ENV - 
+MONGO_URI -
+MONGO_CLOUD_URI -
+JWT_SECRET - 
+CLOUDINARY_CLOUD_NAME - 
+CLOUDINARY_API_KEY - 
+CLOUDINARY_API_SECRET - 
+APP_EMAIL_ADDRESS - 
+APP_EMAIL_PASSWORD - 
 CLIENT_DOMAIN
 - please check all the dependencies installed in backend & frontend before testing
 
